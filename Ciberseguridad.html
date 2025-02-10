@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciberseguridad</title>
+    <link rel="stylesheet" href="Ciber.css">
+    <script defer src="scriptCiber.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Noticias tecnológicas</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gadgets.html">Gadgets</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
+                <li><a href="Eventos.html">Eventos</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="btn-personalizar" onclick="toggleCustomization()">Personalizar</button>
+    </header>
+
+    <div class="customization-panel" id="customizationPanel">
+        <h3>Personalizar colores</h3>
+        <label>Body: <input type="color" id="bodyColor"></label>
+        <label>Header: <input type="color" id="headerColor"></label>
+        <label>Footer: <input type="color" id="footerColor"></label>
+        <button onclick="applyColors()">Aplicar</button>
+        <button onclick="toggleCustomization()">Cerrar</button>
+    </div>
+
+    <section class="hero">
+        <h1>CIBERSEGURIDAD</h1>
+        <p>Una guía completa del concepto, tipos, amenazas y estrategias.</p>
+    </section>
+
+    <section class="contenido">
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#intro">Introducción</a></li>
+            <li><a href="#que-es">¿Qué es la ciberseguridad?</a></li>
+            <li><a href="#historia">Historia de la ciberseguridad</a></li>
+            <li><a href="#tipos">Tipos de seguridad informática</a></li>
+            <li><a href="#ciberataques">Tipos de ciberataques y soluciones</a></li>
+            <li><a href="#estrategias">Características de una buena estrategia</a></li>
+        </ul>
+    </section>
+
+    <section class="contenido" id="intro">
+        <h2>Introducción</h2>
+        <p>La ciberseguridad es un conjunto de prácticas diseñadas para proteger sistemas, redes y datos contra ataques digitales. Con el aumento de la tecnología, la protección de la información se ha vuelto crucial.</p>
+    </section>
+
+    <section class="contenido" id="que-es">
+        <h2>¿Qué es la ciberseguridad?</h2>
+        <p>La ciberseguridad es el conjunto de procedimientos y herramientas que se implementan para proteger la información que se genera y procesa a través de computadoras, servidores, dispositivos móviles, redes y sistemas electrónicos.
+
+            De acuerdo a los expertos de Information Systems Audit and Control Association (ISACA), la ciberseguridad se define como "una capa de protección para los archivos de información”. También, para referirse a la ciberseguridad, se utiliza el término seguridad informática o seguridad de la información electrónica.
+            
+            Uno de los objetivos de la ciberseguridad es generar confianza entre clientes, proveedores y el mercado en general. En un mundo hiperconectado, donde la mayoría de nuestras actividades las hacemos a través de la red y dispositivos electrónicos, garantizar la seguridad de las operaciones es una necesidad imperante.
+            
+            Los empresarios y líderes mundiales consideraron a los ataques cibernéticos como uno de los principales riesgos a los que se enfrentan en la actualidad y a la ciberseguridad como su mayor reto.</p>
+    </section>
+
+    <section class="contenido" id="historia">
+        <h2>Historia de la ciberseguridad</h2>
+        <p>La evolución de la ciberseguridad brinda un contexto más amplio de cómo fue la transformación al mundo digital y los riesgos que surgieron con este cambio.
+
+            El primer hacker de la historia fue Nevil Maskelyne. En 1903, interceptó la primera transmisión de telégrafo inalámbrico, mostrando las vulnerabilidades de este sistema desarrollado por Marconi.
+            
+            John Draper fue el primer ciberdelincuente, mejor conocido como “Captain Crunch”. Draper, descubrió que el sonido emitido por un silbato que se obsequiaba en las cajas de cereal de “Cap’n Crunch”, podía engañar a la señal de la central telefónica y así poder realizar llamadas gratis.
+            
+            En los años 70s apareció el primer malware de la historia: Creeper, un programa que se replicaba así mismo. Este malware mostraba el mensaje “I’m a creeper, catch me if you can!”. A partir de ahí, nace el primer antivirus llamado Reaper, que su función era la de eliminar las infecciones por Creeper.
+            
+            Con el paso de los años y los avances tecnológicos, la información en red iba cada vez en aumento, y con ello, su valor e importancia tanto para las organizaciones como para los ciberdelincuentes.
+            
+            El malware en los años 80s incrementó su presencia y a la par se desarrollaron antivirus más eficientes. En la actualidad, se utiliza una plataforma de detección y respuesta de endpoint (EDR) para proteger los equipos de un ataque de malware debido a su gran evolución.
+            
+            A finales de esta década, Kevin Mitnick utilizó ingeniería social para tener acceso a información personal y confidencial; este tipo de ciberataque, que comenzó a tener mayor uso en aquella época, sigue siendo una de los métodos más populares para vulnerar los activos de una empresa, sin embargo, se pueden prevenir y reducir con una buena estrategia, formación a colaboradores y protocolos de security awareness.
+            
+            La regulación del Internet es un reto enorme debido a su carácter internacional y a la variedad en su contenido. A principios de los 90s la necesidad de hacer frente a los ataques cibernéticos se convirtió en tema de discusión internacional, la falta de conocimiento sobre el ciberespacio, de medidas de seguridad, jurisdicción y competencia afectaba sobre todo a los países desarrollados, donde el uso de la tecnología y el abuso de usuarios mermaba en la economía y sociedad.
+            
+            Las primeras acciones para crear mecanismos legales frente a los ciberdelitos fueron locales. En 1986, en Estados Unidos se creó la Computer Fraud and Abuse Act, sin embargo, su capacidad se vio sobrepasada por la transformación tecnológica.
+            
+            En 1995, se formó en Europa un comité de expertos en delitos informáticos para trabajar en estrategias y contrarrestar los ataques a través de Internet. Convencidos de la necesidad de aplicar una política penal para proteger a la sociedad frente a la ciberdelincuencia y la importancia de fortalecer la cooperación internacional, para 2001 se aprobó y firmó el Convenio de Budapest, que hoy en día es integrado por 56 países.</p>
+    </section>
+
+    <section class="contenido" id="tipos">
+        <h2>Tipos de seguridad informática</h2>
+        <p>La seguridad informática es un tema crucial para la protección y gestión de la información de cualquier organización, por lo que es de suma importancia reconocer las categorías que existen para determinar las acciones en cada una de ellas.
+
+            La seguridad informática contempla cuatro áreas principales:</p>
+            
+        <p>    ●  Confidencialidad: Solo usuarios autorizados pueden acceder a recursos, datos e información.</p>
+            
+        <p>    ●  Integridad: Solo los usuarios autorizados deben ser capaces de modificar los datos cuando sea requerido.</p>
+            
+        <p>    ●  Disponibilidad: Los datos deben estar disponibles para los usuarios cuando sea necesario.</p>
+            
+        <p>    ●  Autenticación: Verificar que realmente se está en comunicación con quién se están comunicando.</p>
+            
+        <p> De acuerdo a los elementos de objeto de protección, clasificamos estos tipos de seguridad informática:</p>
+            
+        <p>    ●  Seguridad de hardware</p>
+            
+        <p>    ●  Seguridad de software</p>
+            
+        <p>    ●  Seguridad de red</p>
+        <p>Existe algunos tipos de ciberseguridad, pero en esta ocasión te presento una de las tres más importantes:</p>
+        <ul>
+            <li>Seguridad de redes: protege la infraestructura de red.</li>
+            <li>Seguridad de la información: protege los datos almacenados.</li>
+            <li>Seguridad en la nube: protege servicios y datos en la nube.</li>
+        </ul>
+    </section>
+
+    <section class="contenido" id="ciberataques">
+        <h2>Tipos de ciberataques y soluciones</h2>
+        <p>Algunos de los ataques más comunes incluyen:</p>
+        <ul>
+            <li><b>Phishing:</b> engañar a los usuarios para robar información.</li>
+            <li><b>Malware:</b> software malicioso que daña o controla un sistema.</li>
+            <li><b>Ransomware:</b> secuestra datos y pide rescate por su liberación.</li>
+        </ul>
+    </section>
+
+    <section class="contenido" id="estrategias">
+        <h2>Características de una buena estrategia de ciberseguridad</h2>
+        <p>Para garantizar la seguridad de la información, una estrategia efectiva debe incluir:</p>
+        <ul>
+            <li>Uso de software de seguridad actualizado.</li>
+            <li>Autenticación de múltiples factores.</li>
+            <li>Capacitación en ciberseguridad para los empleados.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 InfoSecurity - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

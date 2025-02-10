@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Tecnológicos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="event.css">
+    <script defer src="event.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Noticias Tecnológicas</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gadgets.html">Gadgets</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
+                <li><a href="Eventos.html">Eventos</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="btn-personalizar" onclick="toggleCustomization()">Personalizar</button>
+    </header>
+
+    <div class="customization-panel" id="customizationPanel">
+        <h3>Personalizar colores</h3>
+        <label>Body: <input type="color" id="bodyColor"></label>
+        <label>Header: <input type="color" id="headerColor"></label>
+        <label>Footer: <input type="color" id="footerColor"></label>
+        <button onclick="applyColors()">Aplicar</button>
+        <button onclick="toggleCustomization()">Cerrar</button>
+    </div>
+
+    <section class="hero">
+        <h1>Descubre los eventos más importantes en tecnología</h1>
+        <p>Desde conferencias de ciberseguridad hasta lanzamientos de productos innovadores.</p>
+        <button class="btn-mas-info">Más Información</button>
+    </section>
+
+    <div class="container">
+        <div class="evento" id="actuales">
+            <div class="evento-texto">
+                <h2>Eventos Actuales</h2>
+                <p>Eventos que están sucediendo en este momento en el mundo de la tecnología. Descubre los últimos avances y discusiones que están marcando el futuro de la tecnología.</p>
+            </div>
+            <img src="https://www.computerworld.es/wp-content/uploads/2024/11/Eventos-CYBERSECURITY2024-1920x1080-1.jpg?quality=50&strip=all&w=1024" alt="Evento actual">
+            <a href="https://www.computerworld.es/article/3597827/hacia-una-ciberseguridad-mas-multidisciplinar-proactiva-y-trascendente.html" target="_blank">
+                <button class="btn-ver-evento">Ver evento</button>
+            </a>
+        </div>
+
+        <div class="evento" id="futuros">
+            <div class="evento-texto">
+                <h2>Próximos Eventos</h2>
+                <p>No te pierdas las próximas conferencias y lanzamientos tecnológicos. Estarás al tanto de las últimas novedades antes que nadie.</p>
+            </div>
+            <img src="https://redcamif.org/wp-content/uploads/2024/08/Invitacion-Arte-Final-Evento-Ciberseguridad-e1723837585563.png" alt="Evento futuro">
+            <a href="https://redcamif.org/webinar-como-enfrentar-los-riesgos-de-la-ciberseguridadwebinar-cultura-digital-como-transformarnos-y-por-donde-empezar/" target="_blank">
+                <button class="btn-ver-evento">Ver evento</button>
+            </a>
+        </div>
+
+        <div class="evento" id="pasados">
+            <div class="evento-texto">
+                <h2>Eventos Pasados</h2>
+                <p>Revive los mejores momentos de eventos tecnológicos pasados. Desde los avances en IA hasta las innovaciones en el hardware más reciente.</p>
+            </div>
+            <img src="https://www.mticsproducciones.com/cybersecurity-bank-and-government-colombia-2024/assets/img/intro-bg.png" alt="Evento pasado">
+            <a href="https://www.mticsproducciones.com/cybersecurity-bank-and-government-ecuador-2024/" target="_blank">
+                <button class="btn-ver-evento">Ver evento</button>
+            </a>
+        </div>
+    </div>
+
+
+    <section class="suscripcion">
+        <h2>¡Suscríbete para más noticias!</h2>
+        <p>Recibe actualizaciones sobre los eventos más importantes en tecnología.</p>
+        <input type="email" placeholder="Tu correo electrónico">
+        <button>Suscribirse</button>
+    </section>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/groups/636820450651870/?locale=es_LA" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/cyberelsalvador" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/iciberseguridad/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2025 Eventos Tech - Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="calendar.js"></script> 
+</body>
+</html>
